@@ -23,17 +23,38 @@
   fill: var(--jp-inverse-layout-color2);
 }
 
+/* .jp-Notebook-cell:hover .jp-enh-cell-button, */
 .jp-mod-active .jp-enh-cell-button {
   display: block;
 }
 
-.jp-enh-cell-run-cell-and-select-next {
-  left: 46px;
+.lm-Widget.jp-enh-cell-run-cell-and-select-next {
+  left: 35px;
   top: 21px;
+  width: 28px;
+  height: 28px;
+}
+.lm-Widget.jp-enh-cell-run-cell-and-select-next:hover {
+  background: rgba(167, 182, 194, 0.3);
+}
+
+.lm-Widget.jp-enh-cell-run-cell-and-select-next:active {
+  background: rgba(167, 182, 194, 0.7);
 }
 
 .jp-CodeCell .jp-enh-cell-run-cell-and-select-next {
-  top: 46px;
+  top: 44px;
+}
+
+.jp-Cell-outputArea {
+  overflow-y: auto;
+  max-height: 30em;
+  margin-left: var(--jp-private-cell-scrolling-output-offset);
+}
+
+
+.jp-enh-cell-run-cell-and-select-next svg {
+  height: 100%;
 }
 
 .jp-enh-cell-move-cell-up {
@@ -65,7 +86,7 @@
   padding: 2px 0px;
   min-height: 22px;
   height: 22px;
-  z-index: 6;
+  z-index: 0;
 
   color: var(--jp-ui-font-color1);
   font-size: 12px; /*calc(var(--jp-ui-font-size1) / var(--jp-ui-font-scale-factor));*/
