@@ -32,6 +32,7 @@
     "build:labextension:dev": "jupyter labextension build --development True .",
     "build:lib": "tsc",
     "build:prod": "jlpm run build:lib && jlpm run build:labextension",
+    "pack": "jlpm run build:lib && jlpm run build:labextension && python -m build -s",
     "clean": "jlpm run clean:lib",
     "clean:all": "jlpm run clean:lib && jlpm run clean:labextension",
     "clean:labextension": "rimraf jlab_enhanced_cell_toolbar/labextension",
